@@ -1,0 +1,49 @@
+payal@payal-VirtualBox:~$ cd /var
+payal@payal-VirtualBox:/var$ ls
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  snap  spool  tmp
+payal@payal-VirtualBox:/var$ cd log
+payal@payal-VirtualBox:/var/log$ ls 
+alternatives.log  bootstrap.log  fontconfig.log   kern.log           syslog.2.gz          vboxadd-install.log  wtmp
+apport.log        btmp           gdm3             kern.log.1         syslog.3.gz          vboxadd-setup.log
+apport.log.1      cups           gpu-manager.log  lastlog            syslog.4.gz          vboxadd-setup.log.1
+apt               dist-upgrade   hp               speech-dispatcher  syslog.5.gz          vboxadd-setup.log.2
+auth.log          dpkg.log       installer        syslog             tallylog             vboxadd-setup.log.3
+auth.log.1        faillog        journal          syslog.1           unattended-upgrades  vboxadd-setup.log.4
+payal@payal-VirtualBox:/var/log$ cat syslog
+Jul 31 00:07:22 payal-VirtualBox rsyslogd:  [origin software="rsyslogd" swVersion="8.32.0" x-pid="851" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Jul 31 00:07:31 payal-VirtualBox anacron[2299]: Job `cron.daily' terminated
+Jul 31 00:07:31 payal-VirtualBox anacron[2299]: Normal exit (1 job run)
+Jul 31 00:09:36 payal-VirtualBox gnome-shell[1617]: Object Gdm.UserVerifierProxy (0x55d84f3f00a0), has been already deallocated - impossible to access it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs
+Jul 31 00:09:36 payal-VirtualBox org.gnome.Shell.desktop[1617]: == Stack trace for context 0x55d84ab55330 ==
+Jul 31 00:09:36 payal-VirtualBox org.gnome.Shell.desktop[1617]: #0 0x55d84af63c50 i   resource:///org/gnome/shell/gdm/util.js:436 (0x7f19cc389120 @ 14)
+Jul 31 00:09:36 payal-VirtualBox gnome-shell[1617]: g_dbus_proxy_call_finish_internal: assertion 'G_IS_DBUS_PROXY (proxy)' failed
+Jul 31 00:09:41 payal-VirtualBox gnome-software[1968]: no app for changed ubuntu-dock@ubuntu.com
+Jul 31 00:09:41 payal-VirtualBox gnome-software[1968]: no app for changed ubuntu-appindicators@ubuntu.com
+Jul 31 00:09:41 payal-VirtualBox gnome-shell[1617]: [AppIndicatorSupport-DEBUG] Registering StatusNotifierItem :1.58/org/ayatana/NotificationItem/software_update_available
+Jul 31 00:09:41 payal-VirtualBox gnome-shell[1617]: [AppIndicatorSupport-DEBUG] Registering StatusNotifierItem :1.58/org/ayatana/NotificationItem/livepatch
+Jul 31 00:09:42 payal-VirtualBox gvfsd-metadata[2148]: g_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed
+Jul 31 00:09:42 payal-VirtualBox gvfsd-metadata[2148]: g_udev_device_has_property: assertion 'G_UDEV_IS_DEVICE (device)' failed
+
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (**) Option "fd" "20"
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) event0  - Power Button: device removed
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (**) Option "fd" "23"
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) event1  - Sleep Button: device removed
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (**) Option "fd" "24"
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) event3  - Video Bus: device removed
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (**) Option "fd" "25"
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) event6  - VirtualBox mouse integration: device removed
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (**) Option "fd" "26"
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) event5  - VirtualBox USB Tablet: device removed
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (**) Option "fd" "27"
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) event2  - AT Translated Set 2 keyboard: device removed
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (**) Option "fd" "28"
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) event4  - ImExPS/2 Generic Explorer Mouse: device removed
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) systemd-logind: got pause for 13:65
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) systemd-logind: got pause for 13:68
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) systemd-logind: got pause for 13:70
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) systemd-logind: got pause for 226:0
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) systemd-logind: got pause for 13:69
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) systemd-logind: got pause for 13:67
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) systemd-logind: got pause for 13:66
+Jul 31 00:10:55 payal-VirtualBox /usr/lib/gdm3/gdm-x-session[1417]: (II) systemd-logind: got pause for 13:64
+
